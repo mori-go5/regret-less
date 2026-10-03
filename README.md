@@ -23,7 +23,7 @@
 - **Framework**: Nuxt 4 + Vue 3
 - **Styling**: Tailwind CSS v4
 - **Charts**: Chart.js + vue-chartjs
-- **AI**: OpenAI GPT-4o-mini
+- **AI**: Google Gemini 3.5 Flash
 - **Testing**: Vitest + fast-check (Property-based testing)
 
 ## セットアップ
@@ -35,7 +35,7 @@ pnpm install
 `.env` ファイルを作成:
 
 ```
-NUXT_OPENAI_API_KEY=sk-...
+NUXT_GEMINI_API_KEY=AIza...
 ```
 
 ```bash
