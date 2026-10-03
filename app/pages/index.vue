@@ -132,7 +132,7 @@ function fillExample(ex: typeof examples[0]) {
         class="w-full bg-amber-500 hover:bg-amber-400 disabled:bg-neutral-700 disabled:cursor-not-allowed text-neutral-950 font-bold py-4 rounded-lg text-lg transition-colors"
       >
         <span v-if="isLoading">80歳の視点から分析中...</span>
-        <span v-else">後悔リスクを分析する →</span>
+        <span v-else>後悔リスクを分析する →</span>
       </button>
     </form>
 
