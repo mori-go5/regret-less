@@ -1,0 +1,9 @@
+{
+  "name": "Regret.less Decision Framework",
+  "version": "1.0.0",
+  "description": "後悔最小化フレームワークを使った意思決定支援ツール。DecisionCoachAgentとRegretAnalyzerAgentを提供します。",
+  "author": "regret-less",
+  "skills": [
+    "decision-framework"
+  ]
+}

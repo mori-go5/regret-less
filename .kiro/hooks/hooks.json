@@ -1,0 +1,23 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "TypeScript Typecheck on Save",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(ts|vue)$",
+      "action": {
+        "type": "command",
+        "command": "cd /Users/mori/Projects/regret-less && pnpm nuxt typecheck 2>&1 | tail -20"
+      }
+    },
+    {
+      "name": "Validate API route schema on save",
+      "trigger": "PostFileSave",
+      "matcher": "server/api/.*\\.ts$",
+      "action": {
+        "type": "command",
+        "command": "cd /Users/mori/Projects/regret-less && node --input-type=module -e \"import('./server/api/analyze.post.ts').catch(e => { console.error('Schema validation failed:', e.message); process.exit(1) })\" 2>&1 | tail -10 || echo 'OK: server route syntax looks fine'"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Nuxt
+.nuxt/
+.output/
+.data/
+dist/
+
+# Node
+node_modules/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# MCP決断履歴（ローカルのみ）
+.decisions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

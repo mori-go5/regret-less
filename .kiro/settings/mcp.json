@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "regret-less-history": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "cwd": "/Users/mori/Projects/regret-less",
+      "env": {},
+      "disabled": false
+    }
+  }
+}
